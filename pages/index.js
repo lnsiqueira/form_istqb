@@ -233,7 +233,7 @@ export default function Formulario() {
               checked={resposta.correta}
               onChange={(e) => handleCheckboxChange(index, e)}
             />
-            <label htmlFor={`correta-${index}`}>Correta</label>
+            <label htmlFor={`correta-${index}`}>Correct</label>
           </div>
         ))}
         {erroValidacao && <p style={{ color: 'red' }}>{erroValidacao}</p>}

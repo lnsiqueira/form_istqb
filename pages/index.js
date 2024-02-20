@@ -93,7 +93,7 @@ export default function Formulario() {
 
   return (
     <div>
-       <h1>FORM -  ISTQB</h1>
+       <h1>FORM -  ISTQB v.10</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="question">Question:</label>
         <textarea

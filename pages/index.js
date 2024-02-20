@@ -89,12 +89,12 @@ export default function Formulario() {
        console.error('Erro ao salvar no Firestore:', error);
      }
 
-      setPergunta('');
-      setRespostas([
-        { texto: '', correta: false },
-        { texto: '', correta: false },
-        { texto: '', correta: false },
-        { texto: '', correta: false },
+     setquestion('');
+     setAnswers([
+        { text: '', correct: false },
+        { text: '', correct: false },
+        { text: '', correct: false },
+        { text: '', correct: false },
       ]);
       setErroValidacao(''); 
   

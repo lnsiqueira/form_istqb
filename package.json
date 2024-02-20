@@ -1,7 +1,6 @@
 {
   "name": "form_istqb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "next dev"
@@ -10,9 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "again": "^0.0.1",
+    "firebase": "^10.4.0",
     "firebase-admin": "^12.0.0",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "description": ""
 }

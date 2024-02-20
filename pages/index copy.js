@@ -249,7 +249,14 @@ export default function Formulario() {
 
     
 
-
+    setPergunta('');
+      setRespostas([
+        { texto: '', correta: false },
+        { texto: '', correta: false },
+        { texto: '', correta: false },
+        { texto: '', correta: false },
+      ]);
+      setErroValidacao(''); 
 
 
     // // Initialize Firebase

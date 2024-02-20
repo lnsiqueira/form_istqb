@@ -64,17 +64,17 @@ export default function Formulario() {
     const db = firebase.firestore();
     console.log('Conecta....');
 
-    // Cria a coleção
-    const collectionRef = db.collection('minhaColecao');
+    // // Cria a coleção
+    // const collectionRef = db.collection('minhaColecao');
 
-    // Cria um documento na coleção
-    const docData = {
-      nome: 'Meu Documento',
-      descricao: 'Este é um exemplo de documento'
-    };
-    collectionRef.add(docData).then(docRef => {
-      console.log('Documento salvo com ID:', docRef.id);
-    });
+    // // Cria um documento na coleção
+    // const docData = {
+    //   nome: 'Meu Documento',
+    //   descricao: 'Este é um exemplo de documento'
+    // };
+    // collectionRef.add(docData).then(docRef => {
+    //   console.log('Documento salvo com ID:', docRef.id);
+    // });
 
     
  
@@ -88,6 +88,15 @@ export default function Formulario() {
      } catch (error) {
        console.error('Erro ao salvar no Firestore:', error);
      }
+
+      setPergunta('');
+      setRespostas([
+        { texto: '', correta: false },
+        { texto: '', correta: false },
+        { texto: '', correta: false },
+        { texto: '', correta: false },
+      ]);
+      setErroValidacao(''); 
   
   };
 
